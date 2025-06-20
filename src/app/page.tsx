@@ -1,6 +1,35 @@
+"use client";
+
 import Image from "next/image";
 
+import { useEffect, useState } from "react";
+
+const sections = ["about", "projects", "experience"];
+
 export default function Home() {
+  const [activeSection, setActiveSection] = useState("about");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      for (const id of sections) {
+        const section = document.getElementById(id);
+        if (
+          section &&
+          scrollPosition >= section.offsetTop - 96 &&
+          scrollPosition < section.offsetTop + section.offsetHeight - 96
+        ) {
+          setActiveSection(id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
@@ -20,61 +49,50 @@ export default function Home() {
               className="nav hidden lg:block"
               aria-label="In-page jump links"
             >
-              <ul className="mt-16 w-max ">
-                <li>
-                  <a
-                    className="group flex items-center justify-between my-3 p-2 cursor-pointer"
-                    href="#about"
+              <ul className="mt-8 flex me-4">
+                {sections.map((id) => (
+                  <li
+                    key={id}
+                    className={`group flex-1 transition-all motion-reduce:transition-none ${
+                      activeSection === id ? "flex-2" : ""
+                    }`}
                   >
-                    <span className="nav-text inline-flex items-center h-8 px-2 border text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:px-20 group-hover:text-slate-100 group-focus-visible:text-slate-100 transition-all duration-300 motion-reduce:transition-none">
-                      About
-                    </span>
+                    <a
+                      className="py-5 block cursor-pointer pe-4"
+                      href={`#${id}`}
+                    >
+                      <span
+                        className={`nav-text inline-flex items-center w-full h-8 px-2 border text-xs font-bold uppercase tracking-widest group-hover:text-slate-50 group-focus-visible:text-slate-50 transition-all duration-300 motion-reduce:transition-none ${
+                          activeSection === id
+                            ? "text-slate-50"
+                            : "text-slate-300"
+                        }`}
+                      >
+                        {id}
+                      </span>
+                    </a>
+                  </li>
+                ))}
 
-                  </a>
-                </li>
-
-                <li>
+                {/* <li className="group flex-1 hover:flex-2 transition-all motion-reduce:transition-none">
                   <a
-                    className="group flex items-center justify-between my-3 p-2 cursor-pointer"
+                    className="py-5 block cursor-pointer pe-4"
                     href="#projects"
                   >
-                    <span className="nav-text inline-flex items-center h-8 px-2 border text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:px-20 group-hover:text-slate-100 group-focus-visible:text-slate-100 transition-all duration-300 motion-reduce:transition-none">
+                    <span className="nav-text inline-flex items-center w-full h-8 px-2 border text-xs font-bold uppercase tracking-widest text-slate-300  group-hover:text-slate-50 group-focus-visible:text-slate-50 transition-all duration-300 motion-reduce:transition-none">
                       Projects
                     </span>
-                    
                   </a>
                 </li>
 
-                <li>
+                <li className="group flex-1 hover:flex-2 transition-all motion-reduce:transition-none">
                   <a
-                    className="group flex items-center justify-between my-3 p-2 cursor-pointer"
+                    className="py-5 block cursor-pointer pe-4"
                     href="#experience"
                   >
-                    <span className="nav-text inline-flex items-center h-8 px-2 border text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:px-20 group-hover:text-slate-100 group-focus-visible:text-slate-100 transition-all duration-300 motion-reduce:transition-none">
-                      experience
-                    </span>
-
-                  </a>
-                </li>
-
-                {/* <li>
-                  <a className="group flex items-center py-3" href="#projects">
-                    <span className="nav-text inline-flex items-center h-8 px-2 border mr-4 text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:text-slate-100 group-focus-visible:text-slate-100">
-                      Projects
-                    </span>
-                    <span className="nav-indicator h-8 w-8 bg-slate-300 transition-all group-hover:rotate-90 group-hover:bg-slate-100 group-focus-visible:w-16 group-focus-visible:bg-slate-100 motion-reduce:transition-none"></span>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="group flex items-center py-3"
-                    href="#experience"
-                  >
-                    <span className="nav-text inline-flex items-center h-8 px-2 border mr-4 text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:text-slate-100 group-focus-visible:text-slate-100">
+                    <span className="nav-text inline-flex items-center w-full h-8 px-2 border text-xs font-bold uppercase tracking-widest text-slate-300  group-hover:text-slate-50 group-focus-visible:text-slate-50 transition-all duration-300 motion-reduce:transition-none">
                       Experience
                     </span>
-                    <span className="nav-indicator h-8 w-8 bg-slate-300 transition-all group-hover:rotate-90 group-hover:bg-slate-100 group-focus-visible:w-16 group-focus-visible:bg-slate-100 motion-reduce:transition-none"></span>
                   </a>
                 </li> */}
               </ul>
@@ -134,23 +152,22 @@ export default function Home() {
               </h2>
             </div>
             <ul>
-              <li>
+              <li className="mb-12">
                 <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                   <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                   <div className="z-10 sm:order-2 sm:col-span-6">
                     <h3>
                       <a
-                        className="inline-flex items-baseline font-medium leading-tight hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        className="inline-flex items-baseline font-medium leading-tight hover:text-cyan-400 focus-visible:text-cyan-400  group/link text-base"
                         href="https://harold-hurst.co.uk/gazetteer/"
                         target="_blank"
                         rel="noreferrer noopener"
-                        aria-label="Build a Spotify Connected App (opens in a new tab)"
+                        aria-label="Gazetteer Web App (opens in a new tab)"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
-                          Gazetteer Web{" "}
+                          Gazetteer Web App
                           <span className="inline-block">
-                            App
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20"
@@ -169,10 +186,42 @@ export default function Home() {
                       </a>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Mobile first“ web app that provide profiling for all
+                      Mobile first web app that provides profiling for all
                       countries through the presentation of demographic,
                       climatic, geographical and other data.
                     </p>
+                    <a
+                      className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
+                      href="https://github.com/bchiang7/spotify-profile"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="689 stars on GitHub (opens in a new tab)"
+                    ></a>
+                    <ul
+                      className="mt-2 flex flex-wrap"
+                      aria-label="Technologies used:"
+                    >
+                      <li className="mr-1.5 mt-2">
+                        <div className="flex items-center rounded-md bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                          PHP,
+                        </div>
+                      </li>
+                      <li className="mr-1.5 mt-2">
+                        <div className="flex items-center rounded-md bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                          Leaflet JS,
+                        </div>
+                      </li>
+                      <li className="mr-1.5 mt-2">
+                        <div className="flex items-center rounded-md bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                          Bootstrap,
+                        </div>
+                      </li>
+                      <li className="mr-1.5 mt-2">
+                        <div className="flex items-center rounded-md bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                          Javascript
+                        </div>
+                      </li>
+                    </ul>
                   </div>
 
                   <Image
@@ -206,7 +255,7 @@ export default function Home() {
                   <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                     <header
-                      className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                      className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-300 sm:col-span-2"
                       aria-label="2024 to Present"
                     >
                       2024 — Present
@@ -215,7 +264,7 @@ export default function Home() {
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
                           <a
-                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400  group/link text-base"
                             href="https://www.klaviyo.com"
                             target="_blank"
                             rel="noreferrer noopener"
