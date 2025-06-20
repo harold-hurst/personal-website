@@ -33,13 +33,36 @@ export default function Home() {
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
-        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
+        <header className="group/group1 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
           <div>
             <h1 className="text-4xl underline font-bold tracking-tight sm:text-5xl">
-              Harry Hurst
+   Harry Hurst<i className="text-cyan-400">.</i>
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">
-              Front End Web Developer
+
+
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:translate-y-1 delay-[50ms]" aria-hidden="true">F</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[75ms]" aria-hidden="true">r</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[100ms]" aria-hidden="true">o</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[125ms]" aria-hidden="true">n</span>
+                            <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:translate-y-1 delay-[150ms]" aria-hidden="true">t </span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[200ms]" aria-hidden="true">E</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[225ms]" aria-hidden="true">n</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[225ms]" aria-hidden="true">d </span>
+                            <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:translate-y-1 delay-[275ms]" aria-hidden="true">W</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[300ms]" aria-hidden="true">e</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[325ms]" aria-hidden="true">b </span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[350ms]" aria-hidden="true">D</span>
+                            <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:translate-y-1 delay-[375ms]" aria-hidden="true">e</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[400ms]" aria-hidden="true">v</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[425ms]" aria-hidden="true">e</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[450ms]" aria-hidden="true">l</span>
+                            <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:translate-y-1 delay-[475ms]" aria-hidden="true">o</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[500ms]" aria-hidden="true">p</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[525ms]" aria-hidden="true">e</span>
+              <span className="group-hover/group1:text-cyan-400 transition duration-75 group-hover/group1:-translate-y-px delay-[550ms]" aria-hidden="true">r</span>
+
+
             </h2>
             <p className="mt-4 max-w-xs leading-normal">
               I build accessible, pixel-perfect digital experiences for the web.
@@ -153,8 +176,8 @@ export default function Home() {
             </div>
             <ul>
               <li className="mb-12">
-                <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                <div className="group relative grid gap-4 pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                   <div className="z-10 sm:order-2 sm:col-span-6">
                     <h3>
                       <a
@@ -202,22 +225,22 @@ export default function Home() {
                       aria-label="Technologies used:"
                     >
                       <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-md bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                        <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
                           PHP,
                         </div>
                       </li>
                       <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-md bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                        <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
                           Leaflet JS,
                         </div>
                       </li>
                       <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-md bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                        <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
                           Bootstrap,
                         </div>
                       </li>
                       <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-md bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                        <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
                           Javascript
                         </div>
                       </li>
@@ -258,23 +281,23 @@ export default function Home() {
                       className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-300 sm:col-span-2"
                       aria-label="2024 to Present"
                     >
-                      2024 — Present
+                      Jan — Dec 2022
                     </header>
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
                           <a
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400  group/link text-base"
-                            href="https://www.klaviyo.com"
+                            href="https://www.aegon.co.uk/"
                             target="_blank"
                             rel="noreferrer noopener"
-                            aria-label="Senior Frontend Engineer, Accessibility at Klaviyo (opens in a new tab)"
+                            aria-label="Junior Web Developer, at Aegon UK (opens in a new tab)"
                           >
                             <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                             <span>
-                              Senior Frontend Engineer, Accessibility ·{" "}
+                              Junior Web Developer ·{" "}
                               <span className="inline-block">
-                                Klaviyo
+                                Aegon UK
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 20 20"
@@ -294,572 +317,36 @@ export default function Home() {
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">
-                        Build and maintain critical components used to construct
-                        Klaviyo’s frontend, across the whole product. Work
-                        closely with cross-functional teams, including
-                        developers, designers, and product managers, to
-                        implement and advocate for best practices in web
-                        accessibility.
+                        Daily maintenance and updates of public website using
+                        Adobe AEM CMS. Migration of company website to new
+                        hosting platform. Cross-browser and device testing using
+                        BrowserStack to ensure accessible website content.
+                        Collaboration with other departments to update online
+                        articles, promotional material, FAQ pages and images.
+                        SEO using tools such as Semrush
                       </p>
                       <ul
                         className="mt-2 flex flex-wrap"
                         aria-label="Technologies used"
                       >
                         <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            JavaScript
+                          <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                            Javascript
                           </div>
                         </li>
                         <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            TypeScript
+                          <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                            Javascript
                           </div>
                         </li>
                         <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            React
+                          <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                            Javascript
                           </div>
                         </li>
                         <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            Storybook
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li className="mb-12">
-                  <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                    <header
-                      className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                      aria-label="2018 to 2024"
-                    >
-                      2018 — 2024
-                    </header>
-                    <div className="z-10 sm:col-span-6">
-                      <h3 className="font-medium leading-snug text-slate-200">
-                        <div>
-                          <a
-                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                            href="https://upstatement.com"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="Lead Engineer at Upstatement (opens in a new tab)"
-                          >
-                            <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                            <span>
-                              Lead Engineer ·{" "}
-                              <span className="inline-block">
-                                Upstatement
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clipRule="evenodd"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </a>
-                        </div>
-                        <div>
-                          <div className="text-slate-500" aria-hidden="true">
-                            Senior Engineer
-                          </div>
-                        </div>
-                        <div>
-                          <div className="text-slate-500" aria-hidden="true">
-                            Engineer
-                          </div>
-                        </div>
-                      </h3>
-                      <p className="mt-2 text-sm leading-normal">
-                        Build, style, and ship high-quality websites, design
-                        systems, mobile apps, and digital experiences for a
-                        diverse array of projects for clients including Harvard
-                        Business School, Everytown for Gun Safety, Pratt
-                        Institute, Koala Health, Vanderbilt University, The 19th
-                        News, and more. Provide leadership within engineering
-                        department through close collaboration, knowledge
-                        shares, and spearheading the development of internal
-                        tools.
-                      </p>
-                      <ul
-                        className="mt-2 flex flex-wrap"
-                        aria-label="Technologies used"
-                      >
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            JavaScript
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            TypeScript
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            HTML &amp; SCSS
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            React
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            Next.js
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            React Native
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            WordPress
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            Contentful
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            Node.js
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            PHP
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li className="mb-12">
-                  <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                    <header
-                      className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                      aria-label="July to December 2017"
-                    >
-                      July — Dec 2017
-                    </header>
-                    <div className="z-10 sm:col-span-6">
-                      <h3 className="font-medium leading-snug text-slate-200">
-                        <div>
-                          <a
-                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                            href="https://www.apple.com/apple-music/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="UI Engineer Co-op at Apple (opens in a new tab)"
-                          >
-                            <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                            <span>
-                              UI Engineer Co-op ·{" "}
-                              <span className="inline-block">
-                                Apple
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clipRule="evenodd"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </a>
-                        </div>
-                      </h3>
-                      <p className="mt-2 text-sm leading-normal">
-                        Developed and styled interactive web apps for Apple
-                        Music, including the user interface of Apple Music’s
-                        embeddable web player widget for in-browser user
-                        authorization and full song playback.
-                      </p>
-                      <ul
-                        className="mt-2 flex flex-wrap"
-                        aria-label="Related links"
-                      >
-                        <li className="mr-4">
-                          <a
-                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                            href="https://developer.apple.com/documentation/musickitjs"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="MusicKit.js (opens in a new tab)"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="mr-1 h-3 w-3"
-                              aria-hidden="true"
-                            >
-                              <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
-                              <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
-                            </svg>
-                            <span>MusicKit.js</span>
-                          </a>
-                        </li>
-                        <li className="mr-4">
-                          <a
-                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                            href="https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="9to5Mac (opens in a new tab)"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="mr-1 h-3 w-3"
-                              aria-hidden="true"
-                            >
-                              <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
-                              <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
-                            </svg>
-                            <span>9to5Mac</span>
-                          </a>
-                        </li>
-                        <li className="mr-4">
-                          <a
-                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                            href="https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="The Verge (opens in a new tab)"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="mr-1 h-3 w-3"
-                              aria-hidden="true"
-                            >
-                              <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
-                              <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
-                            </svg>
-                            <span>The Verge</span>
-                          </a>
-                        </li>
-                      </ul>
-                      <ul
-                        className="mt-2 flex flex-wrap"
-                        aria-label="Technologies used"
-                      >
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            Ember
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            SCSS
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            JavaScript
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            MusicKit.js
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li className="mb-12">
-                  <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                    <header
-                      className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                      aria-label="2016 to 2017"
-                    >
-                      2016 — 2017
-                    </header>
-                    <div className="z-10 sm:col-span-6">
-                      <h3 className="font-medium leading-snug text-slate-200">
-                        <div>
-                          <a
-                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                            href="https://scout.camd.northeastern.edu/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="Developer at Scout Studio (opens in a new tab)"
-                          >
-                            <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                            <span>
-                              Developer · Scout{" "}
-                              <span className="inline-block">
-                                Studio
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clipRule="evenodd"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </a>
-                        </div>
-                      </h3>
-                      <p className="mt-2 text-sm leading-normal">
-                        Collaborated with other student designers and engineers
-                        on pro-bono projects to create new brands, design
-                        systems, and websites for organizations in the
-                        community.
-                      </p>
-                      <ul
-                        className="mt-2 flex flex-wrap"
-                        aria-label="Technologies used"
-                      >
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            Jekyll
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            SCSS
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            JavaScript
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            WordPress
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li className="mb-12">
-                  <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                    <header
-                      className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                      aria-label="July to December 2016"
-                    >
-                      July — Dec 2016
-                    </header>
-                    <div className="z-10 sm:col-span-6">
-                      <h3 className="font-medium leading-snug text-slate-200">
-                        <div>
-                          <a
-                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                            href="https://starry.com/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="Software Engineer Co-op at Starry (opens in a new tab)"
-                          >
-                            <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                            <span>
-                              Software Engineer Co-op ·{" "}
-                              <span className="inline-block">
-                                Starry
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clipRule="evenodd"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </a>
-                        </div>
-                      </h3>
-                      <p className="mt-2 text-sm leading-normal">
-                        Worked with the UI team to engineer and improve major
-                        features of Starry’s customer-facing Android app.
-                      </p>
-                      <ul
-                        className="mt-2 flex flex-wrap"
-                        aria-label="Related links"
-                      >
-                        <li className="mr-4">
-                          <a
-                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                            href="https://play.google.com/store/apps/details?id=com.starry.management&amp;hl=en_US&amp;gl=US"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="Android App (opens in a new tab)"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="mr-1 h-3 w-3"
-                              aria-hidden="true"
-                            >
-                              <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
-                              <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
-                            </svg>
-                            <span>Android App</span>
-                          </a>
-                        </li>
-                        <li className="mr-4">
-                          <a
-                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                            href="https://starry.com/blog/product/whats-new-screentime-just-got-better-for-parents"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="ScreenTime 2.0 (opens in a new tab)"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="mr-1 h-3 w-3"
-                              aria-hidden="true"
-                            >
-                              <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
-                              <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
-                            </svg>
-                            <span>ScreenTime 2.0</span>
-                          </a>
-                        </li>
-                      </ul>
-                      <ul
-                        className="mt-2 flex flex-wrap"
-                        aria-label="Technologies used"
-                      >
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            Cordova
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            Backbone
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            JavaScript
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            CSS
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li className="mb-12">
-                  <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                    <header
-                      className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                      aria-label="July to December 2015"
-                    >
-                      July — Dec 2015
-                    </header>
-                    <div className="z-10 sm:col-span-6">
-                      <h3 className="font-medium leading-snug text-slate-200">
-                        <div>
-                          <a
-                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                            href="https://us.mullenlowe.com/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            aria-label="Creative Technologist Co-op at MullenLowe U.S. (opens in a new tab)"
-                          >
-                            <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                            <span>
-                              Creative Technologist Co-op · MullenLowe{" "}
-                              <span className="inline-block">
-                                U.S.
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clipRule="evenodd"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </a>
-                        </div>
-                      </h3>
-                      <p className="mt-2 text-sm leading-normal">
-                        Developed, maintained, and shipped production code for
-                        client websites. Clients included JetBlue, Lovesac, U.S.
-                        Cellular, U.S. Department of Defense, and more.
-                      </p>
-                      <ul
-                        className="mt-2 flex flex-wrap"
-                        aria-label="Technologies used"
-                      >
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            HTML
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            CSS
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            JavaScript
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                            jQuery
+                          <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                            Javascript
                           </div>
                         </li>
                       </ul>
@@ -876,9 +363,8 @@ export default function Home() {
                   aria-label="View Full Résumé (opens in a new tab)"
                 >
                   <span>
-                    View Full{" "}
+                    View Full CV{" "}
                     <span className="inline-block">
-                      Résumé
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -899,12 +385,12 @@ export default function Home() {
             </div>
           </section>
 
-          <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+          <footer className="max-w-md pb-16 text-sm sm:pb-0">
             <p>
               Loosely designed in{" "}
               <a
                 href="https://www.figma.com/"
-                className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Figma (opens in a new tab)"
@@ -914,7 +400,7 @@ export default function Home() {
               and coded in{" "}
               <a
                 href="https://code.visualstudio.com/"
-                className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Visual Studio Code (opens in a new tab)"
@@ -924,7 +410,7 @@ export default function Home() {
               by yours truly. Built with{" "}
               <a
                 href="https://nextjs.org/"
-                className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Next.js (opens in a new tab)"
@@ -934,7 +420,7 @@ export default function Home() {
               and{" "}
               <a
                 href="https://tailwindcss.com/"
-                className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Tailwind CSS (opens in a new tab)"
@@ -944,7 +430,7 @@ export default function Home() {
               , deployed with{" "}
               <a
                 href="https://vercel.com/"
-                className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Vercel (opens in a new tab)"
@@ -954,7 +440,7 @@ export default function Home() {
               . All text is set in the{" "}
               <a
                 href="https://rsms.me/inter/"
-                className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Inter (opens in a new tab)"
