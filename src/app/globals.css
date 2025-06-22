@@ -29,4 +29,6 @@ body {
 }
 
 
-/* for headers on mobile #174A82 */
+.projectsList, .experienceList {
+  margin-bottom: 300px;
+}
