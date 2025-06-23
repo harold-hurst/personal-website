@@ -163,8 +163,9 @@ export default function Home() {
                 r
               </span>
             </h2>
-            <p className="mt-4 max-w-xs leading-normal">
-              I build accessible, pixel-perfect digital experiences for the web.
+            <p className="mt-4 max-w-sm leading-normal">
+              I develop performant, scalable, and accessible web applications
+              using modern frameworks and clean, maintainable code.
             </p>
 
             <nav
@@ -195,31 +196,53 @@ export default function Home() {
                     </a>
                   </li>
                 ))}
-
-                {/* <li className="group flex-1 hover:flex-2 transition-all motion-reduce:transition-none">
-                  <a
-                    className="py-5 block cursor-pointer pe-4"
-                    href="#projects"
-                  >
-                    <span className="nav-text inline-flex items-center w-full h-8 px-2 border text-xs font-bold uppercase tracking-widest text-slate-300  group-hover:text-slate-50 group-focus-visible:text-slate-50 transition-all duration-300 motion-reduce:transition-none">
-                      Projects
-                    </span>
-                  </a>
-                </li>
-
-                <li className="group flex-1 hover:flex-2 transition-all motion-reduce:transition-none">
-                  <a
-                    className="py-5 block cursor-pointer pe-4"
-                    href="#experience"
-                  >
-                    <span className="nav-text inline-flex items-center w-full h-8 px-2 border text-xs font-bold uppercase tracking-widest text-slate-300  group-hover:text-slate-50 group-focus-visible:text-slate-50 transition-all duration-300 motion-reduce:transition-none">
-                      Experience
-                    </span>
-                  </a>
-                </li> */}
               </ul>
             </nav>
           </div>
+          <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
+            <li className="mr-5 shrink-0 text-xs">
+              <a
+                className="block hover:text-slate-200"
+                href="https://github.com/harold-hurst"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="GitHub (opens in a new tab)"
+                title="GitHub"
+              >
+                <span className="sr-only">GitHub</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  className="h-6 w-6"
+                  aria-hidden="true"
+                >
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+              </a>
+            </li>
+            <li className="mr-5 shrink-0 text-xs">
+              <a
+                className="block hover:text-slate-200"
+                href="https://www.linkedin.com/in/harryhurstdev/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="LinkedIn (opens in a new tab)"
+                title="LinkedIn"
+              >
+                <span className="sr-only">LinkedIn</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-6 w-6"
+                  aria-hidden="true"
+                >
+                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </header>
         <main id="content" className="pt-24 lg:w-[52%] lg:py-24">
           <section
@@ -227,7 +250,7 @@ export default function Home() {
             className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
             aria-label="About me"
           >
-            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-cyan-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
               <h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
                 About
               </h2>
@@ -237,30 +260,20 @@ export default function Home() {
                 A passionate and dedicated developer, skilled in building static
                 and dynamic front-end web services. Knowledge and practical
                 experience with modern web frameworks and content management
-                systems. Competent in all major development languages with a
-                deep understanding of web/browser architecture. With an eye for
-                great design, I
+                systems. Competent in a range of development languages with a
+                strong understanding of web/browser architecture.
               </p>
               <p className="mb-4">
-                am able to contribute both to technical and aesthetic aspects of
-                front-end development. Having worked in the web development team
-                for a large financial organisation as well as on my own personal
-                Javascript projects, I have a breadth of abilities and am always
-                eager to expand my technical knowledge. I am equally comfortable
-                collaborating within teams or managing tasks independently to
-                deliver high-quality digital experiences to industry standards
-                and web best practices
-                <a
-                  className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-                  href="https://www.klaviyo.com/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Klaviyo (opens in a new tab)"
-                >
-                  Klaviyo
-                </a>
+                With an eye for great design, I am able to contribute both to
+                technical and aesthetic aspects of front-end development. Having
+                worked in the web development team for a large financial
+                organisation as well as on my own personal Javascript projects,
+                I have a breadth of abilities and am always eager to expand my
+                technical knowledge. I am equally comfortable collaborating
+                within teams or managing tasks independently to deliver
+                high-quality digital experiences to industry standards and web
+                best practices.
               </p>
-              <p className="mb-4"></p>
             </div>
           </section>
 
@@ -268,7 +281,7 @@ export default function Home() {
             id="projects"
             className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
           >
-            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-cyan-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
               <h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
                 Projects
               </h2>
@@ -312,35 +325,33 @@ export default function Home() {
                       countries through the presentation of demographic,
                       climatic, geographical and other data.
                     </p>
-                    <a
-                      className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
-                      href="https://github.com/bchiang7/spotify-profile"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      aria-label="689 stars on GitHub (opens in a new tab)"
-                    ></a>
                     <ul
                       className="mt-2 flex flex-wrap"
                       aria-label="Technologies used:"
                     >
                       <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
-                          PHP,
-                        </div>
-                      </li>
-                      <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
-                          Leaflet JS,
-                        </div>
-                      </li>
-                      <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
-                          Bootstrap,
-                        </div>
-                      </li>
-                      <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 text-xs font-medium leading-5  ">
                           Javascript
+                        </div>
+                      </li>
+                      <li className="mr-1.5 mt-2">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 text-xs font-medium leading-5  ">
+                          PHP
+                        </div>
+                      </li>
+                      <li className="mr-1.5 mt-2">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 not-only:py-1 text-xs font-medium leading-5  ">
+                          Leaflet JS
+                        </div>
+                      </li>
+                      <li className="mr-1.5 mt-2">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 not-last:not-only:py-1 text-xs font-medium leading-5  ">
+                          Bootstrap
+                        </div>
+                      </li>{" "}
+                      <li className="mr-1.5 mt-2">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 not-only:py-1 text-xs font-medium leading-5  ">
+                          jQuery
                         </div>
                       </li>
                     </ul>
@@ -366,7 +377,7 @@ export default function Home() {
             className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
             aria-label="Work experience"
           >
-            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-cyan-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
               <h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
                 Experience
               </h2>
@@ -429,23 +440,18 @@ export default function Home() {
                         aria-label="Technologies used"
                       >
                         <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
-                            Javascript
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            Adobe AEM
                           </div>
                         </li>
                         <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
-                            Javascript
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            Semrush
                           </div>
                         </li>
                         <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
-                            Javascript
-                          </div>
-                        </li>
-                        <li className="mr-1.5 mt-2">
-                          <div className="flex items-center rounded-md transition-all duration-300 bg-slate-800/50 group-hover:bg-slate-800/0 px-3 py-1 text-xs font-medium leading-5 text-cyan-400 ">
-                            Javascript
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            Google Analytics
                           </div>
                         </li>
                       </ul>

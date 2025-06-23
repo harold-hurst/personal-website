@@ -32,3 +32,9 @@ body {
 .projectsList, .experienceList {
   margin-bottom: 300px;
 }
+
+.mobileHeading {
+  /* background-color: var(--background);
+  opacity: 0.75; */
+
+}
