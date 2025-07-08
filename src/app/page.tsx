@@ -354,7 +354,7 @@ export default function Home() {
                     >
                       <li className="mr-1.5 mt-2">
                         <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 text-xs font-medium leading-5  ">
-                          API's
+                          APIs
                         </div>
                       </li>
                       <li className="mr-1.5 mt-2">
