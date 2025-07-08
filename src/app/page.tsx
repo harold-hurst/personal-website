@@ -242,6 +242,29 @@ export default function Home() {
                 </svg>
               </a>
             </li>
+            <li className="mr-5 shrink-0 text-xs">
+              <a
+                className="block hover:text-slate-200"
+                href="/resume.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Resume (opens in a new tab)"
+                title="Resume"
+              >
+                <span className="sr-only">Resume</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  className="bi bi-file-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11" />
+                </svg>
+              </a>
+            </li>
           </ul>
         </header>
         <main id="content" className="pt-24 lg:w-[52%] lg:py-24">
@@ -287,7 +310,7 @@ export default function Home() {
               </h2>
             </div>
             <ul className="projectsList">
-              <li className="mb-12">
+              <li className="mb-12 cursor-pointer">
                 <div className="group relative grid gap-4 pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                   <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                   <div className="z-10 sm:order-2 sm:col-span-6">
@@ -331,7 +354,7 @@ export default function Home() {
                     >
                       <li className="mr-1.5 mt-2">
                         <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 text-xs font-medium leading-5  ">
-                          Javascript
+                          API's
                         </div>
                       </li>
                       <li className="mr-1.5 mt-2">
@@ -349,11 +372,6 @@ export default function Home() {
                           Bootstrap
                         </div>
                       </li>{" "}
-                      <li className="mr-1.5 mt-2">
-                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 not-only:py-1 text-xs font-medium leading-5  ">
-                          jQuery
-                        </div>
-                      </li>
                     </ul>
                   </div>
 
@@ -366,6 +384,84 @@ export default function Home() {
                     data-nimg="1"
                     className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                     src="/gazetteer.png"
+                  />
+                </div>
+              </li>
+
+              <li className="mb-12 cursor-pointer">
+                <div className="group relative grid gap-4 pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div className="z-10 sm:order-2 sm:col-span-6">
+                    <h3>
+                      <a
+                        className="inline-flex items-baseline font-medium leading-tight hover:text-cyan-400 focus-visible:text-cyan-400  group/link text-base"
+                        href="https://harold-hurst.co.uk/company_directory/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        aria-label="Company Directory Web App (opens in a new tab)"
+                      >
+                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>
+                          Company Directory Web App
+                          <span className="inline-block">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                clipRule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                        </span>
+                      </a>
+                    </h3>
+                    <p className="mt-2 text-sm leading-normal">
+                      Interact with a back end server database from a mobile or
+                      desktop based client that allows for creation, retrieval
+                      and modification of company personnel.
+                    </p>
+                    <ul
+                      className="mt-2 flex flex-wrap"
+                      aria-label="Technologies used:"
+                    >
+                      <li className="mr-1.5 mt-2">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 text-xs font-medium leading-5  ">
+                          SQL
+                        </div>
+                      </li>
+                      <li className="mr-1.5 mt-2">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 text-xs font-medium leading-5  ">
+                          Bootstrap
+                        </div>
+                      </li>
+                      <li className="mr-1.5 mt-2">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 not-last:not-only:py-1 text-xs font-medium leading-5  ">
+                          CRUD
+                        </div>
+                      </li>{" "}
+                      <li className="mr-1.5 mt-2">
+                        <div className="border border-cyan-400 transition-all duration-300 px-3 rounded py-1 not-only:py-1 text-xs font-medium leading-5  ">
+                          jQuery
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <Image
+                    alt="Company Directory Web App"
+                    loading="lazy"
+                    width="200"
+                    height="48"
+                    decoding="async"
+                    data-nimg="1"
+                    className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                    src="/company_directory.png"
                   />
                 </div>
               </li>
@@ -384,6 +480,162 @@ export default function Home() {
             </div>
             <div>
               <ol className="experienceList">
+                <li className="mb-12">
+                  <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                    <header
+                      className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-300 sm:col-span-2"
+                      aria-label="March 2025 to Present"
+                    >
+                      March 2025 — Present
+                    </header>
+                    <div className="z-10 sm:col-span-6">
+                      <h3 className="font-medium leading-snug text-slate-200">
+                        <div>
+                          <a
+                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400  group/link text-base"
+                            href="https://www.aegon.co.uk/"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            aria-label="Junior Web Developer, at Aegon UK (opens in a new tab)"
+                          >
+                            <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                            <span>
+                              Web | Software Development Traineeship ·{" "}
+                              <span className="inline-block">
+                                IT Career Switch
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 20 20"
+                                  fill="currentColor"
+                                  className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                  aria-hidden="true"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                    clipRule="evenodd"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </span>
+                          </a>
+                        </div>
+                      </h3>
+                      <p className="mt-2 text-sm leading-normal">
+                        A comprehensive full-stack program focused on both
+                        front-end and back-end technologies. Gained hands-on
+                        experience in HTML5, CSS3, JavaScript, React, Python,
+                        PHP, SQL, and Git, while also earning
+                        industry-recognized certifications such as Microsoft
+                        98-383. Built a professional-grade portfolio through
+                        guided real-world projects, demonstrating practical
+                        skills in responsive design, dynamic web applications,
+                        and version control.
+                      </p>
+                      <ul
+                        className="mt-2 flex flex-wrap"
+                        aria-label="Related links"
+                      >
+                        <li className="mr-4">
+                          <a
+                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
+                            href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            aria-label="Full Stack Engineer (opens in a new tab)"
+                          >
+                            <i className="bi bi-code-slash me-2"></i>
+                            <span>Full Stack Engineer</span>
+                          </a>
+                        </li>
+                        <li className="mr-4">
+                          <a
+                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
+                            href="https://www.codecademy.com/learn/introduction-to-javascript"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            aria-label="Learn Javascript (opens in a new tab)"
+                          >
+                            <i className="bi bi-filetype-js me-2"></i>
+                            <span>Javascript Essentials</span>
+                          </a>
+                        </li>
+                        <li className="mr-4">
+                          <a
+                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
+                            href="https://www.codecademy.com/learn/learn-bootstrap"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            aria-label="Learn Bootstrap (opens in a new tab)"
+                          >
+                            <i className="bi bi-bootstrap me-2"></i>
+                            <span>Bootstrap</span>
+                          </a>
+                        </li>
+                        <li className="mr-4">
+                          <a
+                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
+                            href="https://www.codecademy.com/learn/paths/php-skill"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            aria-label="Learn PHP (opens in a new tab)"
+                          >
+                            <i className="bi bi-filetype-php me-2"></i>
+                            <span>PHP</span>
+                          </a>
+                        </li>
+                        <li className="mr-4">
+                          <a
+                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
+                            href="https://www.codecademy.com/learn/learn-java"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            aria-label="Learn Java (opens in a new tab)"
+                          >
+                            <i className="bi bi-filetype-java me-2"></i>
+                            <span>Java</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul
+                        className="mt-2 flex flex-wrap"
+                        aria-label="Technologies used"
+                      >
+                        <li className="mr-1.5 mt-2">
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            Python
+                          </div>
+                        </li>
+                        <li className="mr-1.5 mt-2">
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            Java
+                          </div>
+                        </li>
+                        <li className="mr-1.5 mt-2">
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            C#
+                          </div>
+                        </li>
+                        <li className="mr-1.5 mt-2">
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            jQuery
+                          </div>
+                        </li>
+                        <li className="mr-1.5 mt-2">
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            PHP
+                          </div>
+                        </li>
+                        <li className="mr-1.5 mt-2">
+                          <div className="border border-cyan-400 transition-all duration-300 rounded px-3 py-1 text-xs font-medium leading-5  ">
+                            SQL Databases
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
                 <li className="mb-12">
                   <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
@@ -492,27 +744,7 @@ export default function Home() {
 
           <footer className="max-w-md pb-16 text-sm sm:pb-0">
             <p>
-              Loosely designed in{" "}
-              <a
-                href="https://www.figma.com/"
-                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Figma (opens in a new tab)"
-              >
-                Figma
-              </a>{" "}
-              and coded in{" "}
-              <a
-                href="https://code.visualstudio.com/"
-                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Visual Studio Code (opens in a new tab)"
-              >
-                Visual Studio Code
-              </a>{" "}
-              by yours truly. Built with{" "}
+              Built with{" "}
               <a
                 href="https://nextjs.org/"
                 className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
@@ -522,17 +754,17 @@ export default function Home() {
               >
                 Next.js
               </a>{" "}
-              and{" "}
+              for fast, server-rendered React pages and styled using{" "}
               <a
                 href="https://tailwindcss.com/"
                 className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="Tailwind CSS (opens in a new tab)"
+                aria-label="Tailwind (opens in a new tab)"
               >
-                Tailwind CSS
-              </a>
-              , deployed with{" "}
+                Tailwind css
+              </a>{" "}
+              for utility-first responsiveness. Deployed via{" "}
               <a
                 href="https://vercel.com/"
                 className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
@@ -542,17 +774,7 @@ export default function Home() {
               >
                 Vercel
               </a>
-              . All text is set in the{" "}
-              <a
-                href="https://rsms.me/inter/"
-                className="font-medium text-slate-300 hover:text-cyan-400 focus-visible:text-cyan-400"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Inter (opens in a new tab)"
-              >
-                Inter
-              </a>{" "}
-              typeface.
+              . Typography is set in the clean, modern Inter typeface.
             </p>
           </footer>
         </main>
