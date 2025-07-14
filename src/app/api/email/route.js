@@ -4,8 +4,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request) {
 
-  console.log('Received request to send email');
-  console.log('Request body:', request.body);
+  console.log('Request body:', request);
 
   const { email, name, message } = await request.json();
 
@@ -21,8 +20,8 @@ export async function POST(request) {
     from: 'harry.hurst3855@gmail.com',
     to: 'harry.hurst3855@gmail.com',
     cc: email, // Uncomment to send a copy to the sender
-    subject: `Message from ${name} (${email})`,
-    text: message,
+    subject: `Message recieved by Harry Hurst`,
+    text: `Hi ${name}, I have recieved your message:\n\n "${message}" \n\n I will get back to you at: ${email}`,
   };
 
   const sendMailPromise = () =>

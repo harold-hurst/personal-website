@@ -12,12 +12,11 @@ const EmailForm = () => {
     // Call the sendEmail function with the form data
     // This function should be defined in your utils/send-email.js file
 
-    console.log(data);
     sendEmail(data);
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} id="contactForm">
       <div className='mb-5'>
         <label
           htmlFor='name'
@@ -61,8 +60,13 @@ const EmailForm = () => {
         ></textarea>
       </div>
       <div>
-        <button className='hover:shadow-form rounded-md bg-cyan-400 py-3 px-8 text-base font-semibold text-white outline-none'>
-          Submit
+        <button
+          id='submitForm'
+          className='hover:shadow-form rounded-md bg-cyan-400 py-3 px-8 text-base font-semibold text-white outline-none transition-all duration-700'
+
+        >
+  Submit
+
         </button>
       </div>
     </form>
