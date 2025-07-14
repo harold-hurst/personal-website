@@ -528,8 +528,7 @@ export default function Home() {
                         front-end and back-end technologies. Gained hands-on
                         experience in HTML5, CSS3, JavaScript, React, Python,
                         PHP, SQL, and Git, while also earning
-                        industry-recognized certifications such as Microsoft
-                        98-383. Built a professional-grade portfolio through
+                        industry-recognized certifications. Built a professional-grade portfolio through
                         guided real-world projects, demonstrating practical
                         skills in responsive design, dynamic web applications,
                         and version control.
