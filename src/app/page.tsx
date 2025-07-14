@@ -246,7 +246,7 @@ export default function Home() {
             <li className="mr-5 shrink-0 text-xs">
               <a
                 className="block hover:text-slate-200"
-                href="/resume.pdf"
+                href="/harold_hurst_cv.pdf"
                 download
                 aria-label="Download Curriculum Vitae"
                 title="Curriculum Vitae"
@@ -780,7 +780,7 @@ export default function Home() {
               <div className="mt-12">
                 <a
                   className="inline-flex items-baseline leading-tight hover:text-cyan-400 focus-visible:text-cyan-400 font-semibold text-slate-200 group/link text-base"
-                  href="/resume.pdf"
+                  href="/harold_hurst_cv.pdf"
                   download
                   aria-label="Download Full Résumé"
                 >
