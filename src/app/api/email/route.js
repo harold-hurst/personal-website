@@ -12,14 +12,14 @@ export async function POST(request) {
   const transport = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.MY_EMAIL,
-      pass: process.env.MY_PASSWORD,
+      user: 'harry.hurst3855@gmail.com',
+      pass: 'dpqd ftcc jfqa ysvw',
     },
   });
 
   const mailOptions = {
-    from: process.env.MY_EMAIL,
-    to: process.env.MY_EMAIL,
+    from: 'harry.hurst3855@gmail.com',
+    to: 'harry.hurst3855@gmail.com',
     cc: email, // Uncomment to send a copy to the sender
     subject: `Message from ${name} (${email})`,
     text: message,
