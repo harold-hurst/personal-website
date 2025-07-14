@@ -7,7 +7,7 @@ export function sendEmail(data) {
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
-    .then((response) => {
+    .then(() => {
       const submitBtn = document.getElementById("submitForm");
       if (submitBtn) {
         submitBtn.textContent = "Email Sent";
@@ -30,5 +30,7 @@ export function sendEmail(data) {
         submitBtn.classList.remove("bg-cyan-400");
         submitBtn.classList.add("bg-red-500");
       }
+
+      console.error("Error sending email:", err);
     });
 }
