@@ -1,7 +1,12 @@
 import { NextResponse } from 'next/server';
+
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
+
+  console.log('Received request to send email');
+  console.log('Request body:', request.body);
+
   const { email, name, message } = await request.json();
 
   const transport = nodemailer.createTransport({
@@ -15,7 +20,7 @@ export async function POST(request) {
   const mailOptions = {
     from: process.env.MY_EMAIL,
     to: process.env.MY_EMAIL,
-    // cc: email, // Uncomment to send a copy to the sender
+    cc: email, // Uncomment to send a copy to the sender
     subject: `Message from ${name} (${email})`,
     text: message,
   };

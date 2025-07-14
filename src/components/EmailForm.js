@@ -4,9 +4,15 @@ import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/utils/send-email';
 
 const EmailForm = () => {
+
   const { register, handleSubmit } = useForm();
 
   function onSubmit(data) {
+
+    // Call the sendEmail function with the form data
+    // This function should be defined in your utils/send-email.js file
+
+    console.log(data);
     sendEmail(data);
   }
 

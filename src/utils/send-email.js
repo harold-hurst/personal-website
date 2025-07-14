@@ -1,4 +1,6 @@
 export function sendEmail(data) {
+  console.log('Sending email with data:', data);
+
   const apiEndpoint = '/api/email';
 
   fetch(apiEndpoint, {
