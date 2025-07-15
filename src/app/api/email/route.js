@@ -17,8 +17,8 @@ export async function POST(request) {
     from: process.env.MY_EMAIL,
     to: process.env.MY_EMAIL,
     // cc: email, // Uncomment to send a copy to the sender
-    subject: `Message recieved by Harry Hurst`,
-    text: `Hi ${name}, I have recieved your message:\n\n "${message}" \n\n I will get back to you at: ${email}`,
+    subject: `Message recieved from ${name} (${email})`,
+    text: `Message recieved from contact form:\n\n Name: ${name}\n\n Email: ${email} \n\n message: ${message}`,
   };
 
   const sendMailPromise = () =>
