@@ -472,7 +472,7 @@ export default function Home() {
                     <h3>
                       <a
                         className="inline-flex items-baseline font-medium leading-tight hover:text-cyan-400 focus-visible:text-cyan-400  group/link text-base"
-                        href="jamming-mc2psv7vp-harold-hursts-projects.vercel.app"
+                        href="https://jamming-peach.vercel.app/"
                         target="_blank"
                         rel="noreferrer noopener"
                         aria-label="Jammming Spotify Web App (opens in a new tab)"
