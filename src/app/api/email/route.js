@@ -16,7 +16,7 @@ export async function POST(request) {
   const mailOptions = {
     from: process.env.MY_EMAIL,
     to: process.env.MY_EMAIL,
-    cc: email, // Uncomment to send a copy to the sender
+    // cc: email, // Uncomment to send a copy to the sender
     subject: `Message recieved by Harry Hurst`,
     text: `Hi ${name}, I have recieved your message:\n\n "${message}" \n\n I will get back to you at: ${email}`,
   };
