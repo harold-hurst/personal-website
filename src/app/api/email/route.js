@@ -1,24 +1,21 @@
 import { NextResponse } from 'next/server';
-
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
-
-  console.log('Request body:', request);
 
   const { email, name, message } = await request.json();
 
   const transport = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'harry.hurst3855@gmail.com',
-      pass: 'dpqd ftcc jfqa ysvw',
+      user: process.env.MY_EMAIL,
+      pass: process.env.MY_PASSWORD,
     },
   });
 
   const mailOptions = {
-    from: 'harry.hurst3855@gmail.com',
-    to: 'harry.hurst3855@gmail.com',
+    from: process.env.MY_EMAIL,
+    to: process.env.MY_EMAIL,
     cc: email, // Uncomment to send a copy to the sender
     subject: `Message recieved by Harry Hurst`,
     text: `Hi ${name}, I have recieved your message:\n\n "${message}" \n\n I will get back to you at: ${email}`,
