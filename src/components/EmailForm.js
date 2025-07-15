@@ -51,7 +51,7 @@ const EmailForm = () => {
       <div>
         <button
           id="submitForm"
-          className="hover:shadow-form rounded-md bg-cyan-400 py-3 px-8 text-base font-semibold text-white outline-none transition-all duration-700"
+          className="hover:shadow-form rounded-md bg-cyan-400 py-3 px-8 text-base font-semibold text-white outline-none transition-all duration-700 cursor-pointer hover:bg-cyan-500"
         >
           Submit
         </button>
