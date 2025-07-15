@@ -472,7 +472,7 @@ export default function Home() {
                     <h3>
                       <a
                         className="inline-flex items-baseline font-medium leading-tight hover:text-cyan-400 focus-visible:text-cyan-400  group/link text-base"
-                        href="https://jammming-nine.vercel.app/"
+                        href="jamming-mc2psv7vp-harold-hursts-projects.vercel.app"
                         target="_blank"
                         rel="noreferrer noopener"
                         aria-label="Jammming Spotify Web App (opens in a new tab)"
@@ -533,7 +533,7 @@ export default function Home() {
                     decoding="async"
                     data-nimg="1"
                     className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                    src="/jammming.png"
+                    src="/jamming.png"
                   />
                 </div>
               </li>
