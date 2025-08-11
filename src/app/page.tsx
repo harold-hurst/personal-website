@@ -538,7 +538,7 @@ export default function Home() {
                 </div>
               </li>
 
-              <li className="mb-12 cursor-pointer">
+              {/* <li className="mb-12 cursor-pointer">
                 <div className="group relative grid gap-4 pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                   <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all duration-300 motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                   <div className="z-10 sm:order-2 sm:col-span-6">
@@ -604,7 +604,7 @@ export default function Home() {
                     src="/izza.png"
                   />
                 </div>
-              </li>
+              </li> */}
             </ul>
           </section>
 
