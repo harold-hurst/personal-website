@@ -36,138 +36,140 @@ export default function Home() {
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
           <div>
-            <h1 className="text-4xl underline font-bold tracking-tight sm:text-5xl">
-              Harry Hurst<i className="text-cyan-400">.</i>
-            </h1>
-            <h2 className="group/group1 mt-3 text-lg font-medium tracking-tight sm:text-xl">
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[15ms]"
-                aria-hidden="true"
-              >
-                F
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[30ms]"
-                aria-hidden="true"
-              >
-                r
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[45ms]"
-                aria-hidden="true"
-              >
-                o
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[60ms]"
-                aria-hidden="true"
-              >
-                n
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[75ms]"
-                aria-hidden="true"
-              >
-                t{" "}
-              </span>
+            <div className="border-l-8 border-cyan-400 pl-6">
+              <h1 className="text-4xl underline font-bold tracking-tight sm:text-5xl">
+                Harry Hurst<i className="text-cyan-400">.</i>
+              </h1>
+              <h2 className="group/group1 mt-3 text-lg font-medium tracking-tight sm:text-xl">
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[15ms]"
+                  aria-hidden="true"
+                >
+                  F
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[30ms]"
+                  aria-hidden="true"
+                >
+                  r
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[45ms]"
+                  aria-hidden="true"
+                >
+                  o
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[60ms]"
+                  aria-hidden="true"
+                >
+                  n
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[75ms]"
+                  aria-hidden="true"
+                >
+                  t{" "}
+                </span>
 
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[105ms]"
-                aria-hidden="true"
-              >
-                E
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[120ms]"
-                aria-hidden="true"
-              >
-                n
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[135ms]"
-                aria-hidden="true"
-              >
-                d{" "}
-              </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[105ms]"
+                  aria-hidden="true"
+                >
+                  E
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[120ms]"
+                  aria-hidden="true"
+                >
+                  n
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[135ms]"
+                  aria-hidden="true"
+                >
+                  d{" "}
+                </span>
 
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[165ms]"
-                aria-hidden="true"
-              >
-                W
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[180ms]"
-                aria-hidden="true"
-              >
-                e
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[195ms]"
-                aria-hidden="true"
-              >
-                b{" "}
-              </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[165ms]"
+                  aria-hidden="true"
+                >
+                  W
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[180ms]"
+                  aria-hidden="true"
+                >
+                  e
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[195ms]"
+                  aria-hidden="true"
+                >
+                  b{" "}
+                </span>
 
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[225ms]"
-                aria-hidden="true"
-              >
-                D
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[240ms]"
-                aria-hidden="true"
-              >
-                e
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[255ms]"
-                aria-hidden="true"
-              >
-                v
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[270ms]"
-                aria-hidden="true"
-              >
-                e
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[285ms]"
-                aria-hidden="true"
-              >
-                l
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[300ms]"
-                aria-hidden="true"
-              >
-                o
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[315ms]"
-                aria-hidden="true"
-              >
-                p
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[330ms]"
-                aria-hidden="true"
-              >
-                e
-              </span>
-              <span
-                className="group-hover/group1:text-cyan-400 transition duration-75 delay-[345ms]"
-                aria-hidden="true"
-              >
-                r
-              </span>
-            </h2>
-            <p className="mt-4 max-w-sm leading-normal">
-              I develop performant, scalable, and accessible web applications
-              using modern frameworks and clean, maintainable code.
-            </p>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[225ms]"
+                  aria-hidden="true"
+                >
+                  D
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[240ms]"
+                  aria-hidden="true"
+                >
+                  e
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[255ms]"
+                  aria-hidden="true"
+                >
+                  v
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[270ms]"
+                  aria-hidden="true"
+                >
+                  e
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[285ms]"
+                  aria-hidden="true"
+                >
+                  l
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[300ms]"
+                  aria-hidden="true"
+                >
+                  o
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[315ms]"
+                  aria-hidden="true"
+                >
+                  p
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[330ms]"
+                  aria-hidden="true"
+                >
+                  e
+                </span>
+                <span
+                  className="group-hover/group1:text-cyan-400 transition duration-75 delay-[345ms]"
+                  aria-hidden="true"
+                >
+                  r
+                </span>
+              </h2>
+              <p className="mt-4 max-w-sm leading-normal">
+                I develop performant, scalable, and accessible web applications
+                using modern frameworks and clean, maintainable code.
+              </p>
+            </div>
 
             <nav
               className="nav hidden lg:block"
